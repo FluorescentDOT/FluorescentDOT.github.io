@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Textureless Deformable Object Tracking with Invisible Markers">
+  <!-- <meta name="keywords" content="Mip-Splatting: Alias-free 3D Gaussian Splatting"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Textureless Deformable Object Tracking with Invisible Markers</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="./static/css/bootstrap-4.4.1.css">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/72.png">
+
+  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script src="./static/js/app.js"></script>
+  <script src="./static/js/video_comparison.js"></script>
+
+  <link rel="stylesheet" href="./static/css/dics.original.css">
+  <script src="./static/js/event_handler.js"></script>
+  <script src="./static/js/dics.original.js"></script>
+
+
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title" style="margin-bottom: 0">Textureless Deformable Object Tracking with Invisible Markers</h1>
+          <br>
+          <h2 class="title is-4" style="margin-top: 0; margin-bottom: 0">International Conference on Computational Photography (ICCP) 2024 </h2>
+          <h2 class="title is-4">(Also in the TPAMI Special Issue)</h2>
+          <br>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <!-- href="https://niujinshuchong.github.io/" -->
+              <a>Xinyuan Li</a><sup>1</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a>Yu Guo</a><sup>2</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a>Yubei Tu</a><sup>2</sup>
+            </span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a>Yu Ji</a><sup>3</sup>
+            </span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a>Yanchen Liu</a><sup>4</sup>
+            </span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a>Jinwei Ye</a><sup>2</sup>
+            </span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a>Changxi Zheng</a><sup>3,4</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Tencent USA</span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="author-block"><sup>2</sup>George Mason University</span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>
+            <span class="author-block"><sup>3</sup>LightThought LLC</span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="author-block"><sup>4</sup>Columbia University</span>
+            
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://drive.google.com/file/d/1oIQfjkCSH7BmEWvn2tFStsF8tK9CaA23/view?usp=sharing"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Supplementary Material paper -->
+              <span class="link-block">
+                <a href="https://drive.google.com/file/d/1jNKa9fdsvJuiJXz0hA3GGF8oTZ24Wn-8/view?usp=sharing"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>Supplementary Material</span>
+                </a>
+              </span>
+
+              <!-- DOT Dataset Link. -->
+              <span class="link-block">
+                <a href="https://dataverse.orc.gmu.edu/dataset.xhtml?persistentId=doi:10.13021/orc2020/XXLVXM&version=DRAFT"
+                   class="external-link button is-normal is-rounded is-dark disabled">
+                  <span class="icon">
+                      <i class="fab fa-dribbble"></i>
+                  </span>
+                  <span>DOT Dataset (Coming soon)</span>
+                  </a>
+              </span>
+  
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" style="margin-top: -30px">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Tracking and reconstructing deformable objects with little texture is challenging due to lack of features.
+            To overcome this problem, we use "invisible markers" to add features to surfaces without changing their appearance: our markers are UV fluorescent and can only be seen under UV light, thus the surface's appearance under normal lighting is unchanged.
+            We design an imaging system for simultaneously capturing videos of deformable objects with and without markers, and leverage the markers for correspondences matching and tracking.
+            Using marker features, we are able to obtain ground truth correspondences for textureless deformable surfaces.
+            We collect a real-world dataset, called "DOT", with ground truth 2D and 3D correspondences, for deformable object tracking and reconstruction.
+            Our dataset can be used for benchmarking, as well as training learning-based algorithms. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="column is-full-width">
+      
+            <video class="video" width="100%" id="xyalias6" loop playsinline autoplay muted src="resources/cloth1.mp4?ngsw-bypass=true" onplay="resizeAndPlay(this)" style="height: 0px;"></video>
+            <canvas height= "0" class="videoMerge" id="xyalias6Merge"></canvas>
+        
+            <!-- <div class="content has-text-centered">
+            <p>
+             Normal appearance (under visible light) vs. fluorescent appearance (under UV light) 
+            </p>
+            </div> -->
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- UV Fluorescent Marker -->
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Method. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3" style="margin-top: -20px">"Inivisible" Markers</h2>
+
+        <!-- Fluoresecent description -->
+        <div class="content has-text-justified">
+          <p style="margin-top: 30px">
+            We use "invisble" markers to introduce features to surfaces, regardless of its original texture. The "invisible" markers are made with UV fluorescent dyes that are only visible under UV lighting.
+            Since they are invisible under visible light, the surface appearance remains untouched in normal lighting conditions. 
+          </p>
+        </div>
+        <img src="./resources/fluorescent_principle.png" class="center"  width="60%" height="60%">
+
+        <div class="content has-text-justified">
+          <p style="margin-top: 30px">
+            We use different patterns for different types objects. Here are some example patterns we use.
+          </p>
+        </div>
+
+      </div>
+    </div>
+    <!--/ Animation. -->
+
+  </div>
+</section>
+
+<!-- Imaging System -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3" style="margin-top: -20px">Time-multiplexed Imaging System</h2>
+
+        <div class="content has-text-justified">
+          <p style="margin-top: 30px">
+            We develop a time-multiplexed multi-view imaging system to  capture deformable motions with and without markers.
+          </p>
+        </div>
+        <img src="./resources/imaging_system.png" class="center">
+        <div class="content has-text-justified">
+          <p style="margin-top: 30px">
+            <b>(Left)</b> Conceptual illustration of our system with trigger scheme (green color: reference camera and triggered with UV light off, purple color: UV cameras and triggered with UV light on).
+            <b>(Center)</b> The real physical setup of our system with a zoom-in view of the UV LED unit.
+            <b>(Right)</b> Multi-view images of a hand scene.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Animation. -->
+
+  </div>
+</section>
+
+<!-- Template-base 3D Reconstruction & Feature Warping -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3" style="margin-top: -20px">Template-base 3D Reconstruction & Feature Warping</h2>
+
+        <div class="content has-text-justified">
+          <p style="margin-top: 30px">
+            We use images with markers (under UV light) for accruate feature tracking and 3D reconstruction.
+            We then use a template-based approach to map the tracked feature points back to the object's normal appearance.
+            Our algorithmic pipeline is shown below.
+          </p>
+        </div>
+        <img src="./resources/template_warping.png" class="center">
+      </div>
+    </div>
+    <!--/ Animation. -->
+
+  </div>
+</section>
+
+<!-- Deformable Object Tracking (DOT) Dataset -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3" style="margin-top: -20px">Deformable Object Tracking (DOT) Dataset</h2>
+
+        <div class="content has-text-justified">
+          <p style="margin-top: 30px">
+            We capture a large dataset for deformable object tracking (we call it DOT).
+            Our dataset contains 4 types of objects (rope, paper, cloth and hand), with around 200 motion sequences.
+            We provides videos with and without UV markers, 3D model, and feature correspondences in both 2D and 3D.
+          </p>
+        </div>
+        <img src="./resources/DOT_dataset.png" class="center">
+      </div>
+    </div>
+    
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3"></h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/NAtz6Lwuj9w?si=zL-uGnIpkKp5xkSS"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+
+  </div>
+</section>
+
+
+<!-- <section class="section">
+  <div class="container is-max-desktop">
+
+        <div class="container">
+          <ul class="nav nav-tabs nav-fill nav-justified" id="ablation-3d-filter">
+              <li class="nav-item">
+                <a class="nav-link active" onclick="ablation3DEvent(0)">Paper</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="ablation3DEvent(1)">Cloth</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="ablation3DEvent(2)">Rope</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="ablation3DEvent(3)">Hand</a>
+              </li>
+          </ul>
+          <br><br>
+          <div class="b-dics" style="width: 1000px; font-weight: 600;">
+              
+          </div>
+        </div>
+
+        <br><br>
+
+
+      </div>
+    </div>
+
+  </div>
+</section> -->
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Reference</h2>
+    <p>X. Li*, G. Yu*, Y. Tu *, Y. Ji, Y. Chen, J. Ye, and C. Zheng, "Textureless Deformable Object Tracking with Invisible Markers", IEEE International Conference on Computational Photograhpy (TPAMI Special Issue), 2024.</p>
+	  
+	<p> * indicates equal contribution.</p>
+    <pre><code>@article{Li2024DOT,
+  author    = {Li, Xinyuan and Guo, Yu and Tu, Yubei and Ji, Yu and Liu, Yanchen and Ye, Jinwei and Zheng, Changxi},
+  title     = {Textureless Deformable Object Tracking with Invisible Markers},
+  journal   = {International Conference on Computational Photography (ICCP)},
+  year      = {2024},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+            This webpage template is from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>. 
+            The video comparison with sliding bar is from <a href="https://dorverbin.github.io/refnerf/">Ref-NeRF</a>. 
+            <!-- The image comparison with sliding bar is from <a href="https://research.nvidia.com/labs/dir/neuralangelo/">Neuralangelo</a>.  -->
+          </p>
+        </div>
+      </div>
+          <p></p>
+        </div>
+      </div>
+</footer>
+
+</body>
+</html>
