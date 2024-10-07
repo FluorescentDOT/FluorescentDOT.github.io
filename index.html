@@ -7,7 +7,31 @@
   <!-- <meta name="keywords" content="Mip-Splatting: Alias-free 3D Gaussian Splatting"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Textureless Deformable Object Tracking with Invisible Markers</title>
+  <style>
+    #scroll-container {
+      display: flex;
+      text-align: center;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 80%;
+      margin: 0 auto;
+      justify-content: center;
+    }
 
+    #scroll-content {
+        display: inline-block;
+        animation: scroll 10s linear infinite;
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+    </style>
   <!-- Bootstrap -->
   <link rel="stylesheet" href="./static/css/bootstrap-4.4.1.css">
 
@@ -74,7 +98,7 @@
             <span class="author-block">
               <a href="https://tflsguoyu.github.io/">Yu Guo</a><sup>2</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
             <span class="author-block">
-              Yubei Tu<sup>2</sup>
+              <a href="https://www.linkedin.com/in/yubei-tu/">Yubei Tu</a><sup>2</sup>
             </span>&nbsp;&nbsp;&nbsp;&nbsp;
             <span class="author-block">
               <a href="https://yeauxji.github.io/">Yu Ji</a><sup>3</sup>
@@ -103,14 +127,26 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://ivlab.cs.gmu.edu/files/ICCP2024_UV_deformable.pdf"
+                <a href="https://arxiv.org/abs/2308.13678"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
-                  <span>Paper</span>
+                  <span>Arxiv Ver.</span>
                 </a>
               </span>
+
+              <!-- IEEE version -->
+              <span class="link-block">
+                <a href="https://www.computer.org/csdl/journal/tp/5555/01/10684001/20lm7DXLDhK"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>IEEE Ver.</span>
+                </a>
+              </span>  
+
               <!-- Supplementary Material paper -->
               <span class="link-block">
                 <a href="https://ivlab.cs.gmu.edu/files/ICCP2024_UV_deformable_supp.pdf"
@@ -135,7 +171,11 @@
   
 
             </div>
-
+            <div id="scroll-container">
+                <div id="scroll-content">
+                    🎉🎉🎉 Paper, Rope and Hand are ready! Cloth will be ready soon! 🎉🎉🎉
+                </div>
+              </div>
           </div>
         </div>
       </div>
